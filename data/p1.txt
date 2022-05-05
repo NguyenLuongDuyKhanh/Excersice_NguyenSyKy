@@ -1,4 +1,0 @@
-name: Harry Nguyen
-phone: (86) 123 456
-address: "1A West avenue, Beijing
-email: harrynguyen@yahoo.com,mrnguyen123@gmail.com
