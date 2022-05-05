@@ -1,0 +1,10 @@
+
+Data folder contains some txt files, it contain plain text data (it is not dictionary or json)
+We must use string operation to extract data (for example, use split(":") to specify key-value)
+The key is not in order, in p1.txt and p2.txt is name-phone-address-email, but in p3.txt is name-phone-email-address
+
+Question:
+    1. How many customers come from VietNam
+    2. Print information of customer who comes from China
+    3. Which is the most popular mailing service
+    4. How many customers' emails in China
