@@ -4,7 +4,7 @@ import os
 
 table1 = []
 
-dir_path = 'D:\Learning\Python\Excercise\data'
+dir_path = 'External_File\data'
 
 element_dict = {}
 
@@ -23,7 +23,7 @@ for file in os.listdir(dir_path):
 #print(table1)
 
 table2 = {}
-table2_path = 'D:\Learning\Python\Excercise\data\\references'
+table2_path = 'External_File\data\\references'
 with open(table2_path,"r") as f:
     for line in f:
         #print(str(line.splitlines()).split(":")[0].replace("['", "").replace("\"", ""))

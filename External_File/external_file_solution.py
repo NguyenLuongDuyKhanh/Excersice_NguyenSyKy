@@ -1,4 +1,3 @@
-from gettext import install
 from external_file_reading import table1, table2
 
 #print(table1)
@@ -18,7 +17,7 @@ for i in table1:
     elif int(country_code) == table2["China"]:
         chinese_customer += 1
         chinese_customer_info.append(i)
-        
+
 
 #print(vietnamese_customer)
 #print(chinese_customer)
@@ -74,7 +73,7 @@ for i in chinese_customer_info:
     1. How many customers come from VietNam
     2. Print information of customer who comes from China
     3. Which is the most popular mailing service
-    4. How many customers' emails in China   
+    4. How many customers' emails in China
 """
 #print(vietnamese_customer)
 #print(chinese_customer_info)
@@ -96,17 +95,16 @@ import json, yaml, csv
 #result_json = json.dumps(results)
 #print(result_json)
 
-with open("D:\Learning\Python\Excercise\solution\json_file.json", "w") as f:
+with open("External_File\solution\json_file.json", "w") as f:
     json.dump(results, f)
 
-with open("D:\Learning\Python\Excercise\solution\json_file.yaml", "w") as f:
+with open("External_File\solution\json_file.yaml", "w") as f:
     yaml.dump(results, f)
 
 header = ["Vietnamese Customer", "Most domain", "Chinese customer email count"]
 results_value = results.values()
 
-with open("D:\Learning\Python\Excercise\solution\json_file.csv", "w") as f:
+with open("External_File\solution\json_file.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(header)
     writer.writerow(results_value)
-
