@@ -39,15 +39,14 @@ for x in results:
         
     #warranty_temp = items_sold[i]["guarantee_info"]["warranty_period"]
     warranty_days = list(x)[1] * 7
-    expire_date_update = expire_date_temp + timedelta(days = warranty_days)
+    expire_date_update = str(expire_date_temp + timedelta(days = warranty_days)).replace(" 00:00:00","")
 
-    print(expire_date_update)
-    order_id = list(x[0])
+    #print(expire_date_update)
+    order_id = list(x)[0]
+    #print(order_id)
 
-    insert_query = "insert into guarantee_info \
-                    set expire_date = expire_date_update where id = order_id"
+    #insert_query = "INSERT INTO guarantee_info(expire_date) VALUES (%s) WHERE id = %s"
+    update_query = "update guarantee_info set expire_date = %s where id = %s"
                     
-    mycursor.execute(insert_query)
+    mycursor.execute(update_query, (expire_date_update, order_id))
     mydb.commit()
-    
-    
