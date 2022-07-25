@@ -1,0 +1,51 @@
+food:
+  sandwich:
+    price: 10
+    stuffed:
+      - sausage: 2
+      - ham: 2
+      - salad: 1
+  croissant:
+    price: 11
+    topping:
+      - chocolate: 1
+      - chip: 1
+  donut:
+    price: 12
+    topping:
+      - chocolate: 1
+      - chip: 1
+  baguette:
+    price: 13
+    stuffed:
+      - sausage: 2
+      - ham: 2
+      - salad: 1
+
+beverage:
+  coffee:
+    price: 10 
+    variants:
+      - hot
+      - cold
+    milk:
+      - yes
+      - no
+  tea:
+    price: 11
+    variants:
+      - hot
+      - cold
+    milk:
+      - yes
+      - no
+  smoothies:
+    price: 12
+    fruit:
+      - Pine Apple
+      - Babana
+      - Water Melon
+      - Strawberry
+    milk:
+      - yes
+      - no
